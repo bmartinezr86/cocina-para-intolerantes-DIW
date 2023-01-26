@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/Landpage/favicon.png"/> <!--Poner icono pequeño en pestaña del navegador-->
     <link rel="stylesheet" href="assets/icons/fontawesome-6.2/">
     <!-- Para usar iconos mira la documentación de font awesome versión 6.2 -->
-    <title>Cocina para intolerantes</title>
+    <title>Home - Cocina para intolerantes</title>
 </head>
 
 <body>
-    <header class="header">
-        <span><a href="index.html"><img src="assets/images/" alt="logo-cocina-para-intolerantes"></a></span>
+    <header id="header">
+        <span id="logo"><a href="index.html"><img src="assets/images/Landpage/logo-temporal-home.png" alt="logo-cocina-para-intolerantes"></a></span>
         <nav class="main-menu">
             <ul>
-                <li><a href="quienes-somos/index.html">Quiénes somos</a></li>
-                <li><a href="recetas/">Recetas</a>
+                <li class="elemento-menu"><a href="quienes-somos/index.html">Quiénes somos</a></li>
+                <li class="elemento-menu"><a href="recetas/index.html">Recetas</a>
                     <ul class="submenu">
                         <li><a href="recetas/sin-azucar/index.html">Sin azúcar</a></li>
                         <li><a href="recetas/sin-gluten/index.html">Sin glúten</a></li>
@@ -26,18 +27,18 @@
                         <li><a href="recetas/otros/index.html">Otros</a></li>
                     </ul>
                 </li>
-                <li><a href="trucos/index.html">Trucos</a>
+                <li class="elemento-menu"><a href="trucos/index.html">Trucos</a>
                 </li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li class="elemento-menu"><a href="contacto/index.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="#slider" class="slider">
+        <!-- <section id="#slider" class="slider">
 
-        </section>
-        <section id="#recetaDestacada" class="recetaDestacada">
+        </section> -->
+        <!-- <section id="#recetaDestacada" class="recetaDestacada">
             <div class="receta">
                 <div class="contenido">
                     <h3>"NO-Pollo" al curry vegano</h3>
@@ -55,8 +56,8 @@
                 </div>
 
             </div>
-        </section>
-        <section id="ultimasRecetasHome" class="ultimasRecetas">
+        </section> -->
+        <!-- <section id="ultimasRecetasHome" class="ultimasRecetas">
             <h3>Últimas Recetas</h3>
             <div class="bloquesUltimasRecetas">
                 <div class="bloque1">
@@ -127,8 +128,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="cocinaRestritivaHome" class="cocinaRestricciones">
+        </section> -->
+        <!-- <section id="cocinaRestritivaHome" class="cocinaRestricciones">
             <h3>Cocina con restricciones</h3>
             <div class="bloquesCategorias">
                 <div class="sin-azucar">
@@ -172,8 +173,8 @@
                     </a>
                 </div>
             </div>
-        </section>
-        <section id="participaSeguidores" class="participaSeguidores">
+        </section> -->
+        <!-- <section id="participaSeguidores" class="participaSeguidores">
             <h3>¡Demuestra que eres un/a gran chef!</h3>
             <div class="contenido">
                 <p>Enváinos por correo o por Whatsapp el resultado de la receta que has seguido y tu experiencia.</p>
@@ -185,8 +186,8 @@
             </div>
             <span class="irGaleria"><a href="#galeriaParticipa">Ir a la galería <i
                         class="fa-regular fa-circle-arrow-down"></i></a></span>
-        </section>
-        <section id="galeriaParticipa" class="mejoresResultadosParticipa">
+        </section> -->
+        <!-- <section id="galeriaParticipa" class="mejoresResultadosParticipa">
             <div>
 
             </div>
@@ -203,20 +204,21 @@
             <div class="decoradoForm">
                 <img src="assets/images/figuraContacto.svg" alt="figura-cocinando">
             </div>
-        </section>
-        <section id="ubicacionHome" class="ubicacion">
+        </section> -->
+        <!-- <section id="ubicacionHome" class="ubicacion">
             <p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d24638.141808804572!2d-0.39508354328657713!3d39.47457578707178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0xd604f46da4855e1%3A0x9c6c795bc92d164e!2sI.E.S.%20Abastos%2C%20Carrer%20D&#39;Alberic%2C%2018%2C%2046008%20Valencia!3m2!1d39.4684257!2d-0.388816!4m0!5e0!3m2!1ses!2ses!4v1674606415115!5m2!1ses!2ses"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </p>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer id="footer">
+        <div id="contenidoFooter">
         <section class="zonaSuperiorFooter">
             <div class="column1">
-                <p><a href="index.html"><img src="assets/images/" alt="logo-cocina-para-intolerantes"></a></p>
+                <p id="logoFooter"><a href="index.html"><img src="assets/images/Landpage/logo-temporal-footer.png" alt="logo-cocina-para-intolerantes"></a></p>
             </div>
 
             <div class="column2 footerMenu">
@@ -248,7 +250,8 @@
         <section class="column2 terminosLegales">
             <p><a href="aviso-legal.html">Aviso legal</a> <a href="politica-de-cookies.html">Política de cookies</a> <a href="politica-de-privacidad.html">Política de privacidad</a></p>
         </section>
-    </footer>
+        </div>
+    </footer> -->
 
 </body>
 
