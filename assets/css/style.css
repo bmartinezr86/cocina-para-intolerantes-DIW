@@ -6,6 +6,12 @@
     src: url("../fonts/Montserrat-Bold.ttf");
 }
 
+/* Montserrat - Medium */
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
 /* Montserrat - Regular */
 @font-face {
     font-family: "Montserrat Regular";
@@ -25,7 +31,7 @@ body {
 }
 
 
-/* Estilos del header general */
+/* Estilos del header */
 #header {
     margin:auto;
     display: flex;
@@ -60,12 +66,13 @@ body {
 }
 
 #header .main-menu  .elemento-menu{
-    margin: 10px;
     margin-bottom: 15px;
+    margin-top: -15px;
     padding: 15px;
 }
 #header .main-menu li .submenu {
     display:none;
+    background-color: white;
 	position:absolute;
     margin-top:15px;
     min-width:180px;
