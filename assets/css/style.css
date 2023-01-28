@@ -29,13 +29,16 @@ body {
     margin: auto;
 }
 
-
+.textoVerde{
+    color: #A9B28D;
+}
 
 /* Estilos del header */
 #header {
     margin: auto;
     display: flex;
     flex-direction: column;
+    width: 1000px;
     max-width: 1200px;
     justify-content: center;
 
@@ -169,6 +172,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    width: 1000px;
     max-width: 1200px;
     padding: 5px;
 }
@@ -195,6 +199,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    width: 1000px;
     max-width: 1200px;
     padding: 15px;
 }
@@ -209,6 +214,7 @@ body {
 .titular1 {
     margin: auto;
     padding: 20px;
+    width: 950px;
     max-width: 1200px;
     color: black;
     font-family: "Montserrat Regular";
@@ -216,14 +222,127 @@ body {
 
 .titular2 {
     margin: auto;
-    margin-top: 15px;
     padding: 20px;
     max-width: 1200px;
-    color: #A9B28D;
     font-family: "Montserrat Regular";
     text-align: center;
 }
 
-#main .bloquesCategorias {
 
+
+/* Página de recetas + Algunos apartados del home*/
+
+/* Cocina restritiva */
+
+#cocinaRestritiva {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.bloquesCategorias {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 1000px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.bloquesCategorias .bloque {
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.bloquesCategorias div:nth-child(odd) {
+    background-color: #F2CAB9;
+}
+.bloquesCategorias div:nth-child(even) {
+    background-color: #A9B28D;
+}
+
+
+.bloquesCategorias .bloque a{
+    color:white;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+}
+
+.bloquesCategorias .bloque img{
+    width: 60px;
+}
+
+/* Últimas recetas */
+
+#ultimasRecetas {
+    padding: 25px;
+    background-color: #F2CAB9;
+    font-family: "Montserrat Regular";
+}
+.bloquesUltimasRecetas {
+    display: flex;
+    justify-content: space-around;
+    width: 950px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.bloquesUltimasRecetas .bloque  {
+    width: 250px;
+
+}
+
+.bloquesUltimasRecetas .bloque img {
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bloquesUltimasRecetas .bloque a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Montserrat Regular";
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bloquesUltimasRecetas .bloque a:hover,
+.bloquesUltimasRecetas .bloque .metaData .author:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+} 
+
+.bloquesUltimasRecetas .bloque .separador {
+    background-color: black;
+    width: 80px;
+    height: 1px;
+    margin: 3px auto 20px;
+}
+
+.bloquesUltimasRecetas .bloque .categoriaUltimasRecetas {
+    margin-bottom:5px;
+}
+
+.bloquesUltimasRecetas .bloque .titular3 a{
+    font-size: 16px;
+    font-family: "Montserrat Bold";
+    margin: 15px auto;
+}
+
+.bloquesUltimasRecetas .bloque .resumen{
+    font-size: 12px;
+    margin: 15px auto;
+}
+
+.bloquesUltimasRecetas .bloque .metaData{
+    font-size: 10px;
+    margin: 10px auto;
+}
+
+.bloquesUltimasRecetas .bloque .metaData .author{
+    font-family: "Montserrat Bold";
 }
