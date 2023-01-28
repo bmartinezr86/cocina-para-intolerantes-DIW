@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href=../assets/images/logos/cuadrado negro.png" />
+    <link rel="icon" type="image/png" href="../assets/images/logos/cuadrado negro.png" />
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/font-awesome/6.2.1/all.min.css">
     <script src="../../assets/css/font-awesome/6.2.1/js/all.min.js"></script>
@@ -34,66 +34,68 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <section id="titular">
             <h1 class="titular1">Recetas</h1>
         </section>
 
         <section id="cocinaRestritiva" class="cocinaRestricciones">
-            <h2 class="titular2">Cocina con restricciones</h2>
+            <h2 class="titular2 textoVerde">Cocina con restricciones</h2>
             <div class="bloquesCategorias">
-                <div class="sin-azucar">
+                <div class="sin-azucar bloque">
                     <a href="sin-azucar/index.html">
                         <p>
-                            <<img src="../assets/icons/Categorias/sin-azucar-blanco.png" alt="sin-azucar">
+                            <img src="../assets/icons/Categorias/sin-azucar-blanco.png" alt="sin-azucar">
                         </p>
                         <p>Sin azúcar</p>
                     </a>
                 </div>
-                <div class="sin-gluten">
+                <div class="sin-gluten bloque">
                     <a href="sin-gluten/index.html">
                         <p>
-                            <<img src="../assets/icons/Categorias/sin-gluten-blanco.png" alt="sin-gluten">
+                            <img src="../assets/icons/Categorias/sin-gluten-blanco.png" alt="sin-gluten">
                         </p>
                         <p>Sin gluten</p>
                     </a>
                 </div>
-                <div class="sin-huevo">
+                <div class="sin-huevo bloque">
                     <a href="sin-huevo/index.html">
                         <p>
-                            <<img src="../assets/icons/Categorias/sin-huevo-blanco.png" alt="sin-huevo">
+                            <img src="../assets/icons/Categorias/sin-huevo-blanco.png" alt="sin-huevo">
                         </p>
                         <p>Sin huevo</p>
                     </a>
                 </div>
-                <div class="sin-huevo">
+                <div class="sin-huevo bloque">
                     <a href="sin-huevo/index.html">
                         <p>
-                            <<img src="../assets/icons/Categorias/sin-huevo-blanco.png" alt="sin-huevo">
+                            <img src="../assets/icons/Categorias/sin-huevo-blanco.png" alt="sin-huevo">
                         </p>
                         <p>Sin huevo</p>
                     </a>
                 </div>
-                <div class="otros">
+                <div class="otros bloque">
                     <a href="otros/index.html">
                         <p>
-                            <<img src="../assets/icons/Categorias/sin-derivados-animales-blanco" alt="otros">
+                            <img src="../assets/icons/Categorias/vegano-blanco.png" alt="otros">
                         </p>
                         <p>Otros</p>
                     </a>
                 </div>
             </div>
         </section>
-                <!-- <section id="ultimasRecetas" class="ultimasRecetas">
-            <h3>Últimas Recetas</h3>
+        <section id="ultimasRecetas" class="ultimasRecetas">
+            <h2 class="titular2">Últimas Recetas</h2>
             <div class="bloquesUltimasRecetas">
-                <div class="bloque1">
-                    <span><a href="recetas/otros/patatas-de-boniato.html"><img src="../assets/images/"
+                <div class="bloque">
+                    <span class="categoriaUltimas"><a href="otros/patatas-de-boniato.html"><img
+                                src="../assets/images/recetas/patatas-gajo-boniato.jpg"
                                 alt="patatas-boniato"></a></span>
-                    <span class="separador"></span>
-                    <p class="categoriaUltimasRecetas"><a href="recetas/otros/index.html">Otros</a></p>
-                    <h4>Patatas de boniato</h4>
-                    <p>Deliciosas y crujientes patatas gajo de boniato. Muy rápidas y perfectas para hacerlas al horno o
+                    <div class="separador"></div>
+                    <p class="categoriaUltimasRecetas"><a href="otros/index.html">Otros</a></p>
+                    <h3 class="titular3"><a href="otros/patatas-de-boniato.html">Patatas de boniato</a></h3>
+                    <p class="resumen">Deliciosas y crujientes patatas gajo de boniato. Muy rápidas y perfectas para
+                        hacerlas al horno o
                         en una freidora de aire.</p>
                     <div class="metaData">
                         <p>
@@ -102,15 +104,18 @@
                         </p>
                     </div>
                 </div>
-                <div class="bloque2">
-                    <span><a href="recetas/sin-azucar/bizcocho-de-cafe-y-chocolate.html.html"><img src="../assets/images/"
+                <div class="bloque">
+                    <span class=""><a href="sin-azucar/bizcocho-de-cafe-y-chocolate.html.html"><img
+                                src="../assets/images/recetas/bizcocho-chocolate-y-cafe.jpg"
                                 alt="bizcocho-de-cafe-y-chocolate"></a></span>
-                    <span class="separador"></span>
-                    <p class="categoriaUltimasRecetas"><a href="recetas/sin -azucar/index.html">Sin ázucar</a> - <a
-                            href="recetas/sin-gluten/index.html">Sin gluten</a> - <a
-                            href="recetas/sin-lactosa/index.html"></a> azucar</p>
-                    <h4>Bizcocho de café y chocolate</h4>
-                    <p>Delicioso bizcocho de café y chocolate sin azúcar. Es súper fácil de preparar y muy inclusivo, ya
+                    <div class="separador"></div>
+                    <p class="categoriaUltimasRecetas"><a href="sin-azucar/index.html">Sin ázucar</a> - <a
+                            href="sin-gluten/index.html">Sin gluten</a> - <a href="sin-lactosa/index.html"> Sin
+                            lactosa</a></p>
+                    <h3 class="titular3"><a href="sin-azucar/bizcocho-de-cafe-y-chocolate.html">Bizcocho de café y
+                            chocolate</a></h3>
+                    <p class="resumen">Delicioso bizcocho de café y chocolate sin azúcar. Es súper fácil de preparar y
+                        muy inclusivo, ya
                         que no lleva ni harina, ni gluten, ni lactosa.</p>
                     <div class="metaData">
                         <p>
@@ -119,13 +124,16 @@
                         </p>
                     </div>
                 </div>
-                <div class="bloque3">
-                    <span><a href="recetas/patatas-de-boniato.html"><img src="../assets/images/"
-                                alt="patatas-boniato"></a></span>
-                    <span class="separador"></span>
-                    <p class="categoriaUltimasRecetas"><a href="recetas/sin-huevo/index.html">Sin huevo</a></p>
-                    <h4>Tortitas de camarón</h4>
-                    <p>Ricas y crujientes tortillas de comarones aptas para alérgicos al huevo. Fáciles y rápidas.</p>
+                <div class="bloque">
+                    <span class="categoriaUltimas"><a href="sin-huevo/tortitas-de-camaron.html"><img
+                                src="../assets/images/recetas/tortitas-de-camaron.jpg" alt="patatas-boniato"></a></span>
+                    <div class="separador"></div>
+                    <p class="categoriaUltimasRecetas"><a href="sin-huevo/index.html">Sin huevo</a></p>
+                    <h3 class="titular3"><a href="sin-huevo/tortita-de-camaron.html">Tortitas de camarón</a></h3>
+                    <p class="resumen">
+                        Ricas y crujientes tortitas de comarones aptas para alérgicos al huevo para 6 personas. Fáciles
+                        y rápidas. Además puedes cocinarlas con tu freidora de aire.
+                    </p>
                     <div class="metaData">
                         <p>
                             <span class="author">Bárbara Martínez ·</span>
@@ -134,14 +142,15 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
     <footer id="footer">
         <div id="contenidoFooter">
             <section id="zonaSuperiorFooter">
                 <div class="columnLeft">
                     <div class="column1">
-                        <p id="logoFooter"><a href="../index.html"><img src="../../assets/images/logos/cuadrado blanco.png"
+                        <p id="logoFooter"><a href="../index.html"><img
+                                    src="../../assets/images/logos/cuadrado blanco.png"
                                     alt="logo-cocina-para-intolerantes"></a></p>
                     </div>
 
@@ -172,7 +181,8 @@
                     <p>&copy; 2022 Bárbara Martínez y Bárbara González</p>
                 </div>
                 <div class="column2 terminosLegales">
-                    <p><a href="../aviso-legal.html">Aviso legal</a> <a href="../politica-de-privacidad.html">Política de
+                    <p><a href="../aviso-legal.html">Aviso legal</a> <a href="../politica-de-privacidad.html">Política
+                            de
                             privacidad</a> <a href="politica-de-cookies.html">Política de
                             cookies</a></p>
                 </div>
