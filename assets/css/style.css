@@ -29,6 +29,8 @@ body {
     margin: auto;
 }
 
+
+
 /* Estilos del header */
 #header {
     margin: auto;
@@ -119,7 +121,6 @@ body {
 }
 
 
-
 /* Estilos Footer*/
 
 #footer {
@@ -133,30 +134,31 @@ body {
 }
 
 #footer p,
-#footer a{
+#footer a {
     color: white;
     text-decoration: none;
     font-family: "Montserrat Regular";
 }
 
-#footer a:hover{
+#footer a:hover {
     color: #A9B28D;
 }
 
-#footer .footerMenu a{
+#footer .footerMenu a {
     font-size: 14px;
     margin: 10px;
 }
 
-#footer #zonaInferiorFooter a, 
-#footer #zonaInferiorFooter p{
+#footer #zonaInferiorFooter a,
+#footer #zonaInferiorFooter p {
     font-size: 12px;
     margin: 10px;
 }
 
 #footer .socialIcons {
-    margin-right: 10px ;
+    margin-right: 10px;
 }
+
 #footer .socialIcons a {
     font-size: 16px;
     margin: 5px;
@@ -195,4 +197,33 @@ body {
     margin: auto;
     max-width: 1200px;
     padding: 15px;
+}
+
+
+/* Estilos main generales*/
+
+#titular {
+    background-color: #F2CAB9;
+}
+
+.titular1 {
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px;
+    color: black;
+    font-family: "Montserrat Regular";
+}
+
+.titular2 {
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    color: #A9B28D;
+    font-family: "Montserrat Regular";
+    text-align: center;
+}
+
+#main .bloquesCategorias {
+
 }
