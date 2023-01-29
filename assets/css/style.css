@@ -346,3 +346,52 @@ body {
 .bloquesUltimasRecetas .bloque .metaData .author{
     font-family: "Montserrat Bold";
 }
+
+/* Contacto */
+
+#introduccionContacto .fraseIntroduccion {
+    font-family: "Montserrat Regular";
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#bloqueContacto {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+#bloqueContacto .datosContacto {
+    display: flex;
+    flex-direction:column;
+    background-color: #A9B28D;
+    padding: 20px;
+    width: 400px;
+
+}
+
+#bloqueContacto .datosContacto a{
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+}
+
+#bloqueContacto .datosContacto a:first-child{
+    margin-top: 20px;
+}
+
+#bloqueContacto .datosContacto a:hover{
+    color:#5E6549;
+}
+
+
+
+#bloqueContacto .mapa iframe{
+    width: 420px;
+    height: 420px;
+}
+
