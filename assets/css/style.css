@@ -359,9 +359,9 @@ body {
 #bloqueContacto {
     display: flex;
     max-width: 1200px;
+    justify-content: center;
     margin: auto;
-    margin-bottom: 20px;
-
+    margin-bottom: 35px;
 }
 
 #bloqueContacto .datosContacto {
@@ -370,28 +370,40 @@ body {
     background-color: #A9B28D;
     padding: 20px;
     width: 400px;
-
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #bloqueContacto .datosContacto a{
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-decoration: none;
     font-family: "Montserrat Regular";
+    
 }
 
 #bloqueContacto .datosContacto a:first-child{
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #bloqueContacto .datosContacto a:hover{
     color:#5E6549;
 }
 
-
-
 #bloqueContacto .mapa iframe{
     width: 420px;
     height: 420px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#bloqueContacto  .enlaceDatoContacto {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#bloqueContacto  .icono {
+    font-size: 30px;
+    margin: auto 8% auto 8%;
 }
 
