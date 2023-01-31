@@ -252,7 +252,7 @@ body {
 
 /* Página de recetas + Algunos apartados del home*/
 
-/* Cocina restritiva */
+/* Cocina restrictiva */
 
 #cocinaRestritiva {
     margin-top: 15px;
@@ -458,7 +458,6 @@ body {
 
 }
 
-
 #bloquesFavoritas .bloqueFav .contenido {
     width: 800px;
     max-width: 1200px;
@@ -503,4 +502,28 @@ body {
     margin-top: 12px;
     margin-left: 15px;
     font-size: 12px;
+}
+
+/* Páginas legales */
+
+ #paginasLegales {
+    
+    padding-top: 18px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    font-family: "Montserrat Regular";
+    text-decoration: none;
+    text-align: justify;
+
+}
+#paginasLegales h3{
+    font-family: "Montserrat Semibold";
+    font-size: medium;
+}
+#paginasLegales ul{
+    margin-left: 2em;
+}
+#paginasLegales ul a{
+    color: #000000;
 }
