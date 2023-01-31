@@ -527,3 +527,113 @@ body {
 #paginasLegales ul a{
     color: #000000;
 }
+
+/* Páginas recetas */
+
+#cuerpoReceta{
+    padding-top: 18px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    font-family: "Montserrat Regular";
+    text-decoration: none;
+    text-align: justify;
+}
+ #bloqueReceta {
+    width: 300px;
+    height: 300px;
+}
+.fotoreceta img{
+    width: 150px;
+    height: 150px;
+}
+
+/* Truco */
+
+#tituloTruco{
+    margin: 40px;
+    margin-bottom: 10px;
+
+}
+
+#tituloTruco .nombreTruco {
+    font-family: "Montserrat Regular";
+    max-width: 1200px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: x-large
+}
+#tituloTruco .autorTruco {
+    font-family: "Montserrat semibold";
+    font-size: x-small;
+    display: inline;
+    margin-top: 0;
+
+}
+#tituloTruco .videoTruco{
+    
+}
+#tituloTruco .fechaTruco{
+    font-family: "Montserrat Semibold";
+    font-size: x-small;
+    color: #F2CAB9;
+    display: inline;
+    margin-left: 1em;
+
+}
+
+#bloqueTruco {
+    margin-top: 0;
+    margin-left: 40px;
+    max-width: 560px;
+    justify-content: center;
+    margin-bottom: 35px;
+    border: solid #A9B28D  1px;
+    padding: 10px;
+    
+}
+#bloqueTruco .videoTruco iframe {
+    width: 560px;
+    height: 315px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#bloqueTruco .textoTruco{
+    font-family: "Montserrat Regular";
+    width: 570px;
+    
+}
+.comparteTruco{
+    background-color: #A9B28D;
+    padding: 5px;
+    margin-top: 5px;
+
+}.comparteTruco a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+    font-size: 12px;
+    margin: 5px;
+    
+}
+.textoCompartir{
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+    font-size: 12px;
+    margin: 5px;
+}
+
+
+.comparteTruco a:hover {
+    color: #A9B28D;
+}
+
+
+/* Páfgina categoria de recetas */
+
+#carruselCategorias .titular2 {
+    margin-top: 10px;
+
+}
