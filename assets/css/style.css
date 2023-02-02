@@ -508,6 +508,7 @@ body {
 
  #paginasLegales {
     
+
     padding-top: 2%;
     padding-left: 10%;
     padding-bottom: 15%;
@@ -516,6 +517,7 @@ body {
     text-align: justify;
     width: 980px;
     max-width: 80%;
+
 
 }
 #paginasLegales h3{
@@ -624,6 +626,7 @@ body {
     margin: 5px;
 }
 
+
 .comparteTruco a:hover {
     color: #A9B28D;
 }
@@ -699,4 +702,18 @@ body {
 }
 
 
+
+=======
+
+.comparteTruco a:hover {
+    color: #A9B28D;
+}
+
+
+/* Páfgina categoria de recetas */
+
+#carruselCategorias .titular2 {
+    margin-top: 10px;
+
+}
 
