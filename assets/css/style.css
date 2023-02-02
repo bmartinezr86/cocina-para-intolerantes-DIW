@@ -252,7 +252,7 @@ body {
 
 /* Página de recetas + Algunos apartados del home*/
 
-/* Cocina restritiva */
+/* Cocina restrictiva */
 
 #cocinaRestritiva {
     margin-top: 15px;
@@ -458,7 +458,6 @@ body {
 
 }
 
-
 #bloquesFavoritas .bloqueFav .contenido {
     width: 800px;
     max-width: 1200px;
@@ -504,3 +503,200 @@ body {
     margin-left: 15px;
     font-size: 12px;
 }
+
+/* Páginas legales */
+
+ #paginasLegales {
+    
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-bottom: 15%;
+    font-family: "Montserrat Regular";
+    text-decoration: none;
+    text-align: justify;
+    width: 980px;
+    max-width: 80%;
+
+}
+#paginasLegales h3{
+    font-family: "Montserrat Semibold";
+    font-size: medium;
+}
+#paginasLegales ul{
+    margin-left: 2em;
+}
+#paginasLegales ul a{
+    color: #000000;
+}
+
+/* Páginas recetas */
+
+#cuerpoReceta{
+    padding-top: 18px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    font-family: "Montserrat Regular";
+    text-decoration: none;
+    text-align: justify;
+}
+ #bloqueReceta {
+    width: 300px;
+    height: 300px;
+}
+.fotoreceta img{
+    width: 150px;
+    height: 150px;
+}
+
+/* Truco */
+
+#tituloTruco{
+    margin: 40px;
+    margin-bottom: 10px;
+
+}
+
+#tituloTruco .nombreTruco {
+    font-family: "Montserrat Regular";
+    max-width: 1200px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: x-large
+}
+#tituloTruco .autorTruco {
+    font-family: "Montserrat semibold";
+    font-size: x-small;
+    display: inline;
+    margin-top: 0;
+
+}
+
+#tituloTruco .fechaTruco{
+    font-family: "Montserrat Semibold";
+    font-size: x-small;
+    color: #F2CAB9;
+    display: inline;
+    margin-left: 1em;
+
+}
+
+#bloqueTruco {
+    margin-top: 0;
+    margin-left: 40px;
+    max-width: 560px;
+    justify-content: center;
+    margin-bottom: 35px;
+    border: solid #A9B28D  1px;
+    padding: 10px;
+    
+}
+#bloqueTruco .videoTruco iframe {
+    width: 560px;
+    height: 315px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#bloqueTruco .textoTruco{
+    font-family: "Montserrat Regular";
+    width: 570px;
+    
+}
+.comparteTruco{
+    background-color: #A9B28D;
+    padding: 5px;
+    margin-top: 5px;
+
+}.comparteTruco a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+    font-size: 12px;
+    margin: 5px;
+    
+}
+.textoCompartir{
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+    font-size: 12px;
+    margin: 5px;
+}
+
+.comparteTruco a:hover {
+    color: #A9B28D;
+}
+#trucoIzquierda{
+    position: static;
+    float: left;
+    background-color: #FFFFFF;
+    margin-left: 5%;
+    
+}
+
+#trucoDerecha{
+    position: absolute;
+    right: 5%;
+    width: 30%;
+    background-color: #FFFFFF;
+    font-family: "Montserrat Regular";
+    padding-top: 50px;
+    border-left: #F2CAB9 solid 2px;
+   padding-left: 30px;
+
+}
+#trucoDerecha .otrostrucos{
+    padding: 1.5em;
+}
+#trucoDerecha h3{
+    text-align: center;
+    font-size: x-large;
+    
+    font-weight:normal;
+}
+
+#trucoDerecha a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    display: inline;
+}
+#trucoDerecha a:hover {
+    color: #A9B28D;
+}
+#main{
+    background-color: #FFFFFF;
+}
+
+
+/* Página sobre nosotras*/
+
+#bloqueAbout{
+    font-family: "Montserrat Regular";
+    text-align: justify;
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+     
+}
+
+#bloqueAbout .textoAbout{
+    padding: 20px;
+    margin-left: 5%;
+}
+
+#bloqueAbout .fotoAbout{
+    padding: 20px;
+   
+}
+#bloqueAbout .fotoAbout img{
+    width: 600px;
+    height: 
+}
+
+
+
