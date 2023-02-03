@@ -96,7 +96,7 @@ body {
 }
 
 #header #logo img {
-    width: 80%;
+    width: 800px;
 }
 
 /* header - Menú principal*/
@@ -507,15 +507,14 @@ body {
 /* Páginas legales */
 
 #paginasLegales {
-
     padding-top: 2%;
-    padding-left: 10%;
-    padding-bottom: 15%;
+    padding-bottom: 2%;
     font-family: "Montserrat Regular";
     text-decoration: none;
     text-align: justify;
     width: 980px;
-    max-width: 80%;
+    max-width: 1200px;
+    margin: auto;
 
 }
 
@@ -533,58 +532,57 @@ body {
 }
 
 /* Páginas recetas */
-#mainReceta{
-    display: flexbox;
-    flex-direction: row;
+#mainReceta {
+    font-family: "Montserrat Regular";
 
+}
+
+#mainReceta .contenido {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+}
+
+#cuerpoReceta p{
+    font-size: 14px;
 }
 #cuerpoReceta {
-    padding-top: 18px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    font-family: "Montserrat Regular";
     text-decoration: none;
-    text-align: justify;
+    text-align: left;
 }
 
-#cuerpoReceta .author {
+#cuerpoReceta .author,
+#cuerpoReceta .date {
     font-family: "Montserrat Bold";
-    font-size: x-small;
+    font-size: 10px;
 }
 
 #cuerpoReceta .date {
-    font-family: "Montserrat Bold";
     color: #F2CAB9;
-    font-size: x-small;
 }
 
-#cuerpoReceta .titular2 {
-    margin-left: 0;
-    padding-left: 0;
-    padding-bottom: 0;
-}
-
-#bloqueReceta {
-    position: relative;
-    float: left;
+#cuerpoReceta .bloquesReceta {
     display: flex;
     flex-direction: row;
-
 }
 
-#bloqueReceta2 {
-    position: relative;
-    float: left;
+#cuerpoReceta .bloqueReceta {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
 }
 
-img.fotorec {
+#cuerpoReceta .bloqueReceta2 {
+    margin: 2px;
+    padding: 10px;
+}
+
+#cuerpoReceta .fotorec {
     width: 472px;
     height: 472px;
 }
 
-article.ingredientesReceta h3 {
+#cuerpoReceta .ingredientesReceta h3 {
     background-color: #F2CAB9;
     color: #FFFFFF;
     font-family: "Montserrat Semibold";
@@ -592,21 +590,24 @@ article.ingredientesReceta h3 {
     text-align: left;
 }
 
-article.ingredientesReceta {
+#cuerpoReceta .ingredientesReceta {
     width: 270px;
     height: 470px;
     border: solid 2px #F2CAB9;
-    margin-left: 7%;
 }
 
-.ingredientesReceta li,
-p {
+#cuerpoReceta .ingredientesReceta p,
+#cuerpoReceta .ingredientesReceta ul {
+    padding: 10px;
+}
+
+#cuerpoReceta li {
     margin-left: 3em;
     margin-right: 1.2em;
-    font-size: smaller;
+    font-size: 14px;
 }
 
-article.preparacion h3 {
+#cuerpoReceta .preparacion h3 {
     background-color: #A9B28D;
     color: #FFFFFF;
     font-family: "Montserrat Semibold";
@@ -614,71 +615,62 @@ article.preparacion h3 {
     text-align: left;
 }
 
-.preparacion li,
-p {
-    margin: .5em;
-    margin-left: 1.7em;
-    margin-right: 1.2em;
-}
 
-article.preparacion {
+#cuerpoReceta .preparacion {
     width: 750px;
     border: solid 2px #A9B28D;
     padding-bottom: 1em;
     margin-bottom: 25px;
 }
 
-.textoReceta p {
+#cuerpoReceta .textoReceta p {
     width: 720px;
     padding-bottom: 1em;
     margin-left: 0;
 }
-#recetaDerecha {
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
+
+aside {
     font-family: "Montserrat Regular";
     border-left: #F2CAB9 solid 2px;
     width: 200px;
+    padding: 20px;
+    text-align: center;
 }
 
-#recetaDerecha .otrasRecetas {
+aside .otrasRecetas {
     padding: 15px;
 }
 
-#recetaDerecha .enlaceReceta {
+aside .enlaceReceta {
     font-family: "Montserrat Semibold";
     text-align: center;
-    display: block;
 }
 
 
-#recetaDerecha h3 {
-    text-align: left;
-    font-size: x-large;
-    font-weight: normal;
-    margin: 0;
+aside h3 {
+    text-align: center;
+    font-size: 24px;
 }
 
-#recetaDerecha img {
+aside img {
     width: 200px;
-    height: 200px;
 }
 
-#recetaDerecha .otrasRecetas .enlaceReceta {
+aside .otrasRecetas .enlaceReceta {
     text-decoration: none;
     color: #000000;
     text-align: center;
 }
-#recetaDerecha .otrasRecetas .catReceta {
+
+aside .otrasRecetas .catReceta {
     text-decoration: none;
-    color:#F2CAB9;
+    color: #F2CAB9;
     text-align: center;
     font-family: "Montserrat Semibold";
-    font-size: smaller;
+    font-size: 12px;
 }
 
-#recetaDerecha a:hover {
+aside .catReceta a:hover {
     color: #A9B28D;
 }
 
@@ -878,4 +870,3 @@ article.preparacion {
     margin-top: 10px;
 
 }
-
