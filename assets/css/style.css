@@ -426,7 +426,7 @@ body {
     margin: auto 8% auto 8%;
 }
 
-/* Páfgina categoria de recetas */
+/* Página categoria de recetas */
 
 #carruselCategorias .titular2 {
     margin-top: 10px;
@@ -507,7 +507,9 @@ body {
 /* Páginas legales */
 
  #paginasLegales {
-    
+    max-width: 1200px;                                                              /*Ancho del contenido*/
+    width: 980px;
+    margin: auto;
     padding-top: 18px;
     padding-left: 50px;
     padding-bottom: 50px;
