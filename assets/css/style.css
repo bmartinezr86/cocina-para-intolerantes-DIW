@@ -426,7 +426,7 @@ body {
     margin: auto 8% auto 8%;
 }
 
-/* Página categoria de recetas */
+/* Páfgina categoria de recetas */
 
 #carruselCategorias .titular2 {
     margin-top: 10px;
@@ -506,7 +506,8 @@ body {
 
 /* Páginas legales */
 
- #paginasLegales {
+#paginasLegales {
+
     padding-top: 2%;
     padding-left: 10%;
     padding-bottom: 15%;
@@ -516,42 +517,175 @@ body {
     width: 980px;
     max-width: 80%;
 
-
 }
-#paginasLegales h3{
+
+#paginasLegales h3 {
     font-family: "Montserrat Semibold";
     font-size: medium;
 }
-#paginasLegales ul{
+
+#paginasLegales ul {
     margin-left: 2em;
 }
-#paginasLegales ul a{
+
+#paginasLegales ul a {
     color: #000000;
 }
 
 /* Páginas recetas */
+#mainReceta{
+    display: flexbox;
+    flex-direction: row;
 
-#cuerpoReceta{
+}
+#cuerpoReceta {
     padding-top: 18px;
     padding-left: 50px;
     padding-bottom: 50px;
-    padding-right: 50px;
     font-family: "Montserrat Regular";
     text-decoration: none;
     text-align: justify;
 }
- #bloqueReceta {
-    width: 300px;
-    height: 300px;
+
+#cuerpoReceta .author {
+    font-family: "Montserrat Bold";
+    font-size: x-small;
 }
-.fotoreceta img{
-    width: 150px;
-    height: 150px;
+
+#cuerpoReceta .date {
+    font-family: "Montserrat Bold";
+    color: #F2CAB9;
+    font-size: x-small;
 }
+
+#cuerpoReceta .titular2 {
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+#bloqueReceta {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#bloqueReceta2 {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+img.fotorec {
+    width: 472px;
+    height: 472px;
+}
+
+article.ingredientesReceta h3 {
+    background-color: #F2CAB9;
+    color: #FFFFFF;
+    font-family: "Montserrat Semibold";
+    padding: .5em;
+    text-align: left;
+}
+
+article.ingredientesReceta {
+    width: 270px;
+    height: 470px;
+    border: solid 2px #F2CAB9;
+    margin-left: 7%;
+}
+
+.ingredientesReceta li,
+p {
+    margin-left: 3em;
+    margin-right: 1.2em;
+    font-size: smaller;
+}
+
+article.preparacion h3 {
+    background-color: #A9B28D;
+    color: #FFFFFF;
+    font-family: "Montserrat Semibold";
+    padding: .5em;
+    text-align: left;
+}
+
+.preparacion li,
+p {
+    margin: .5em;
+    margin-left: 1.7em;
+    margin-right: 1.2em;
+}
+
+article.preparacion {
+    width: 750px;
+    border: solid 2px #A9B28D;
+    padding-bottom: 1em;
+    margin-bottom: 25px;
+}
+
+.textoReceta p {
+    width: 720px;
+    padding-bottom: 1em;
+    margin-left: 0;
+}
+#recetaDerecha {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    font-family: "Montserrat Regular";
+    border-left: #F2CAB9 solid 2px;
+    width: 200px;
+}
+
+#recetaDerecha .otrasRecetas {
+    padding: 15px;
+}
+
+#recetaDerecha .enlaceReceta {
+    font-family: "Montserrat Semibold";
+    text-align: center;
+    display: block;
+}
+
+
+#recetaDerecha h3 {
+    text-align: left;
+    font-size: x-large;
+    font-weight: normal;
+    margin: 0;
+}
+
+#recetaDerecha img {
+    width: 200px;
+    height: 200px;
+}
+
+#recetaDerecha .otrasRecetas .enlaceReceta {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+#recetaDerecha .otrasRecetas .catReceta {
+    text-decoration: none;
+    color:#F2CAB9;
+    text-align: center;
+    font-family: "Montserrat Semibold";
+    font-size: smaller;
+}
+
+#recetaDerecha a:hover {
+    color: #A9B28D;
+}
+
 
 /* Truco */
 
-#tituloTruco{
+#tituloTruco {
     margin: 40px;
     margin-bottom: 10px;
 
@@ -559,13 +693,13 @@ body {
 
 #tituloTruco .nombreTruco {
     font-family: "Montserrat Regular";
-    max-width: 1200px;
     margin: 40px auto;
     margin-bottom: 0;
     text-align: left;
     font-weight: bold;
     font-size: x-large
 }
+
 #tituloTruco .autorTruco {
     font-family: "Montserrat semibold";
     font-size: x-small;
@@ -574,7 +708,7 @@ body {
 
 }
 
-#tituloTruco .fechaTruco{
+#tituloTruco .fechaTruco {
     font-family: "Montserrat Semibold";
     font-size: x-small;
     color: #F2CAB9;
@@ -586,94 +720,126 @@ body {
 #bloqueTruco {
     margin-top: 0;
     margin-left: 40px;
-    max-width: 560px;
     justify-content: center;
     margin-bottom: 35px;
-    border: solid #A9B28D  1px;
+    border: solid #A9B28D 1px;
     padding: 10px;
-    
+
 }
+
 #bloqueTruco .videoTruco iframe {
-    width: 560px;
-    height: 315px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 1em;
 }
-#bloqueTruco .textoTruco{
+
+#bloqueTruco .textoTruco {
     font-family: "Montserrat Regular";
     width: 570px;
-    
+    text-align: justify;
+    padding: 1em;
+
 }
-.comparteTruco{
+
+.comparteTruco {
     background-color: #A9B28D;
     padding: 5px;
     margin-top: 5px;
 
-}.comparteTruco a {
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat Regular";
-    font-size: 12px;
-    margin: 5px;
-    
-}
-.textoCompartir{
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat Regular";
-    font-size: 12px;
-    margin: 5px;
 }
 
+.comparteTruco a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+    font-size: 12px;
+    margin: 5px;
+
+}
+
+.textoCompartir {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+    font-size: 12px;
+    margin: 5px;
+}
 
 .comparteTruco a:hover {
     color: #A9B28D;
 }
-#trucoIzquierda{
-    position: static;
+
+#trucoIzquierda {
+    position: relative;
     float: left;
     background-color: #FFFFFF;
-    margin-left: 5%;
-    
+    padding-left: 5%;
+    width: auto;
 }
 
-#trucoDerecha{
+#trucoDerecha {
     position: absolute;
-    right: 5%;
-    width: 30%;
+    right: 2%;
     background-color: #FFFFFF;
     font-family: "Montserrat Regular";
-    padding-top: 50px;
+    padding-top: 20px;
     border-left: #F2CAB9 solid 2px;
-   padding-left: 30px;
+    padding-left: 30px;
 
 }
-#trucoDerecha .otrostrucos{
+
+#trucoDerecha .otrostrucos {
     padding: 1.5em;
 }
-#trucoDerecha h3{
+
+#trucoDerecha h3 {
     text-align: center;
     font-size: x-large;
-    
-    font-weight:normal;
+    font-weight: normal;
 }
 
-#trucoDerecha a{
+#trucoDerecha a {
     text-decoration: none;
     color: #000000;
     text-align: center;
     display: inline;
 }
+
 #trucoDerecha a:hover {
     color: #A9B28D;
 }
-#main{
+
+#main {
     background-color: #FFFFFF;
 }
+
+/* Página Trucos*/
+#ultimosTrucos {
+    font-family: "Montserrat Regular";
+    margin: 5%;
+
+}
+
+#ultimosTrucos h3 {
+    font-size: x-large;
+}
+
+#contenedorSlide .videoSlide {
+    float: left;
+    margin: auto;
+    width: 1000px;
+    max-width: 1200px;
+    padding: 5px;
+}
+
+
+
+
+
 
 
 /* Página sobre nosotras*/
 
-#bloqueAbout{
+#bloqueAbout {
     font-family: "Montserrat Regular";
     text-align: justify;
     display: flex;
@@ -682,20 +848,22 @@ body {
     margin: auto;
     margin-top: 35px;
     margin-bottom: 35px;
-     
+
 }
 
-#bloqueAbout .textoAbout{
+#bloqueAbout .textoAbout {
     padding: 20px;
     margin-left: 5%;
 }
 
-#bloqueAbout .fotoAbout{
+#bloqueAbout .fotoAbout {
     padding: 20px;
-   
+
 }
-#bloqueAbout .fotoAbout img{
+
+#bloqueAbout .fotoAbout img {
     width: 600px;
+<<<<<<< HEAD
     height: 
 }
 
@@ -712,3 +880,7 @@ body {
 
 }
 
+=======
+    height:
+}
+>>>>>>> 6f007448e35a7641a6c1f75d829656b1f3f5e04b
