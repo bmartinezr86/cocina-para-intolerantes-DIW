@@ -622,6 +622,9 @@ body {
     padding-bottom: 1em;
     margin-bottom: 25px;
 }
+#cuerpoReceta .preparacion p{
+    margin-left: 1em;
+}
 
 #cuerpoReceta .textoReceta p {
     width: 720px;
