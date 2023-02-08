@@ -37,9 +37,54 @@
     </header>
 
     <main>
-        <!-- <section id="#slider" class="slider">
-
-        </section> -->
+        <section id="slider" class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <h2>¡Platos adaptados a tus necesidades en un click!</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <h2>Slide 2</h2>
+                                <p>Content for Slide 2</p>
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <h2>Slide 3</h2>
+                                <p>Content for Slide 3</p>
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <h2>Slide 4</h2>
+                                <p>Content for Slide 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </section>
         <!-- <section id="#recetaDestacada" class="recetaDestacada">
             <div class="receta">
                 <div class="contenido">
@@ -84,8 +129,7 @@
                                 alt="bizcocho-de-cafe-y-chocolate"></a></span>
                     <div class="separador"></div>
                     <p class="categoriaUltimasRecetas"><a href="recetas/index.html">Sin ázucar</a> - <a
-                            href="recetas/sin-gluten.html">Sin gluten</a> - <a
-                            href="recetas/sin-lactosa.html"> Sin
+                            href="recetas/sin-gluten.html">Sin gluten</a> - <a href="recetas/sin-lactosa.html"> Sin
                             lactosa</a></p>
                     <h3 class="titular3"><a href="recetas/bizcocho-de-cafe-y-chocolate.html">Bizcocho de café
                             y
@@ -165,45 +209,111 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="participaSeguidores" class="participaSeguidores">
-            <h3>¡Demuestra que eres un/a gran chef!</h3>
-            <div class="contenido">
-                <p>Enváinos por correo o por Whatsapp el resultado de la receta que has seguido y tu experiencia.</p>
-                <p>Y podrás formar parte de nuestra galería con los mejores resultados.</p>
-                <div class="iconsParticipa">
-                    <i class="fa-sharp fa-solid fa-envelope"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-            </div>
-            <span class="irGaleria"><a href="#galeriaParticipa">Ir a la galería <i
-                        class="fa-regular fa-circle-arrow-down"></i></a></span>
-        </section> -->
-        <!-- <section id="galeriaParticipa" class="mejoresResultadosParticipa">
-            <div>
+        <section id="galeriaParticipa" class="mejoresResultadosParticipa">
+            <h2 class="titular2 tCentrado">Los Mejores Resultados</h2>
+            <ul class="galeria">
+                <li><a href="#img1"><img src="assets/images/recetas/baba-ganoush.jpeg" alt=""></a></li>
+                <li><a href="#img2"><img src="assets/images/recetas/bizcocho-chocolate-y-cafe.jpg" alt=""></a></li>
+                <li><a href="#img3"><img src="assets/images/recetas/Bizcocho.jpeg" alt=""></a></li>
+            </ul>
+            <ul class="galeria">
+                <li><a href="#img4"><img src="assets/images/recetas/Bizcocho.jpeg" alt=""></a></li>
+                <li><a href="#img5"><img src="assets/images/recetas/muffins-jengibre.jpeg" alt=""></a></li>
+                <li><a href="#img6"><img src="assets/images/recetas/ONE-POT-pasta.jpeg" alt=""></a></li>
+            </ul>
+            <ul class="galeria">
+                <li><a href="#img7"><img src="assets/images/recetas/pancakes.jpeg" alt=""></a></li>
+                <li><a href="#img8"><img src="assets/images/recetas/patatas-gajo-boniato.jpg" alt=""></a></li>
+                <li><a href="#img9"><img src="assets/images/recetas/Pollo-curry-vegano.webp" alt=""></a></li>
+            </ul>
 
+            <div class="lightbox">
+                <h3>Receta 1</h3>
+                <div class="imagen" id="img1">
+                    <a href="#img9"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href=""><img src="assets/images/recetas/baba-ganoush.jpeg" alt=""></a>
+                    <a href="#img2"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <a href="" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+            <div class="lightbox">
+                <h3>Receta 2</h3>
+                <div class="imagen" id="img2">
+                    <a href="#img1"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href=""><img src="assets/images/recetas/bizcocho-chocolate-y-cafe.jpg" alt=""></a>
+                    <a href="#img3"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <a href="" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+            <div class="lightbox">
+                <h3>Receta 3</h3>
+                <div class="imagen" id="img3">
+                    <a href="#img2"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href=""><img src="assets/images/recetas/hummus.jpeg" alt=""></a>
+                    <a href="#img4"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <a href="" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+            <div class="lightbox">
+                <h3>Receta 4</h3>
+                <div class="imagen" id="img4">
+                    <a href="#img3"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href=""><img src="assets/images/recetas/Bizcocho.jpeg" alt=""></a>
+                    <a href="#img5"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <a href="" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+            <div class="lightbox">
+                <h3>Receta 5</h3>
+                <div class="imagen" id="img5">
+                    <a href="#img4"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href=""><img src="assets/images/recetas/muffins-jengibre.jpeg" alt=""></a>
+                    <a href="#img6"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <a href="" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+            <div class="lightbox">
+                <h3>Receta 6</h3>
+                <div class="imagen" id="img6">
+                    <a href="#img5"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href=""><img src="assets/images/recetas/ONE-POT-pasta.jpeg" alt=""></a>
+                    <a href="#img7"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <a href="" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="lightbox">
+                <h3>Receta 7</h3>
+                <div class="imagen" id="img7">
+                    <a href="#img6"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href=""><img src="assets/images/recetas/pancakes.jpeg" alt=""></a>
+                    <a href="#img8"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <a href="" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="lightbox">
+                <h3>Receta 8</h3>
+                <div class="imagen" id="img8">
+                    <a href="#img7"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href=""><img src="assets/images/recetas/patatas-gajo-boniato.jpg" alt=""></a>
+                    <a href="#img9"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <a href="" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="lightbox">
+                <h3>Receta 9</h3>
+                <div class="imagen" id="img9">
+                    <a href="#img8"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href=""><img src="assets/images/recetas/Pollo-curry-vegano.webp" alt=""></a>
+                    <a href="#img1"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <a href="" class="cerrar"><i class="fa-solid fa-xmark"></i></a>
             </div>
         </section>
-        <section id="contactoHome" class="contacto">
-            <div class="formulario">
-                <h3>Contacta con nosotras</h3>
-                <form action="">
-                    <input type="text" name="nombre" id="nombre" required>
-                    <input type="email" name="email" id="email" required>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                </form>
-            </div>
-            <div class="decoradoForm">
-                <img src="assets/images/figuraContacto.svg" alt="figura-cocinando">
-            </div>
-        </section> -->
-        <!-- <section id="ubicacionHome" class="ubicacion">
-            <p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d24638.141808804572!2d-0.39508354328657713!3d39.47457578707178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0xd604f46da4855e1%3A0x9c6c795bc92d164e!2sI.E.S.%20Abastos%2C%20Carrer%20D&#39;Alberic%2C%2018%2C%2046008%20Valencia!3m2!1d39.4684257!2d-0.388816!4m0!5e0!3m2!1ses!2ses!4v1674606415115!5m2!1ses!2ses"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </p>
-        </section> -->
     </main>
     <footer id="footer">
         <div id="contenidoFooter">
