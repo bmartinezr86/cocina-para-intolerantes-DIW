@@ -426,6 +426,47 @@ body {
     margin: auto 8% auto 8%;
 }
 
+/* Formulario de contacto */
+#formularioContacto {
+    margin: auto;
+    font-family: "Montserrat Regular";
+}
+#contendorBloqueFormulario {
+    display: flex;
+    max-width: 1200px;
+    width: 980px;
+    margin:auto;
+}
+
+#contendorBloqueFormulario .formulario{
+    background-color: #F2CAB9;
+    width: 400px;
+    text-align: center;
+}
+
+.formulario input,
+.formulario textarea {
+    border: none;
+    width: 80%;
+    border-radius: 0px;
+}
+
+.formulario input::placeholder,
+.formulario textarea {
+    color: rgba(169, 178, 141, 0.30);
+}
+
+.formulario input[type=submit] {
+background-color: #A9B28D;
+width: 80%;
+border: none;
+}
+
+#contendorBloqueFormulario .ilustracion{
+    background-color: #A9B28D;
+    width: 400px;
+}
+
 /* Páfgina categoria de recetas */
 
 #carruselCategorias .titular2 {
@@ -503,6 +544,7 @@ body {
     margin-left: 15px;
     font-size: 12px;
 }
+
 
 /* Páginas legales */
 
@@ -867,7 +909,7 @@ aside .catReceta a:hover {
 }
 
 
-/* Páfgina categoria de recetas */
+/* Página categoria de recetas */
 
 #carruselCategorias .titular2 {
     margin-top: 10px;

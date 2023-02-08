@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../assets/images/logos/cuadrado negro.png" />
+    <!--Poner icono pequeño en pestaña del navegador-->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/font-awesome/6.2.1/all.min.css">
     <script src="../assets/css/font-awesome/6.2.1/js/all.min.js"></script>
-    <title>Contacto - Cocina para intolerantes</title>
+    <title>Quiénes somos - Cocina para intolerantes</title>
 </head>
 
 <body>
@@ -21,11 +22,11 @@
                 <li class="elemento-menu"><a href="../quienes-somos/index.html">Quiénes somos</a></li>
                 <li class="elemento-menu"><a href="../recetas/index.html">Recetas</a>
                     <ul class="submenu">
-                        <li><a href="../recetas/sin-azucar/index.html">Sin azúcar</a></li>
-                        <li><a href="../recetas/sin-gluten/index.html">Sin glúten</a></li>
-                        <li><a href="../recetas/sin- huevo/index.html">Sin huevo</a></li>
-                        <li><a href="../recetas/sin-lacteos/index.html">Sin lacteos</a></li>
-                        <li><a href="../recetas/otros/index.html">Otros</a></li>
+                        <li><a href="../recetas/sin-azucar.html">Sin azúcar</a></li>
+                        <li><a href="../recetas/sin-gluten.html">Sin glúten</a></li>
+                        <li><a href="../recetas/sin-huevo.html">Sin huevo</a></li>
+                        <li><a href="../recetas/sin-lacteos.html">Sin lacteos</a></li>
+                        <li><a href="../recetas/otros.html">Otros</a></li>
                     </ul>
                 </li>
                 <li class="elemento-menu"><a href="../trucos/index.html">Trucos</a>
@@ -58,6 +59,25 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.039788814267!2d-0.3910046843717078!3d39.468429820686424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f46da4855e1%3A0x9c6c795bc92d164e!2sI.E.S.%20Abastos!5e0!3m2!1ses!2ses!4v1674947957450!5m2!1ses!2ses"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </section>
+        <section id="formularioContacto">
+            <article id="contendorBloqueFormulario">
+                <div class="formulario">
+                    <h3>Contacta con nosotras</h3>
+                    <span class="separador"></span>
+                    <form>
+                        <p><input type="text" id="nombre" class="nombre" placeholder="Nombre" required></p>
+                        <p><input type="email" name="correo" id="correo" placeholder="Correo" required></p>
+                        <p><input type="phone" name="telefono" id="telefono" placeholder="Teléfono" required></p>
+                        <p><textarea name="mensaje" id="mensaje">Mensaje</textarea></p>
+                        <p><input type="submit" name="enviar" id="enviar" value="Enviar"></p>
+                    </form>
+                </div>
+                <div class="ilustracion">
+
+                </div>
+            </article>
+
         </section>
     </main>
     <footer id="footer">
@@ -97,8 +117,7 @@
                 </div>
                 <div class="column2 terminosLegales">
                     <p><a href="../aviso-legal.html">Aviso legal</a> <a href="../politica-de-privacidad.html">Política
-                            de
-                            privacidad</a> <a href="politica-de-cookies.html">Política de
+                            de privacidad</a> <a href="../politica-de-cookies.html">Política de
                             cookies</a></p>
                 </div>
             </section>
