@@ -250,6 +250,237 @@ body {
     padding: 15px;
 }
 
+/* Estilos landingpage */
+
+/* Slider principal*/
+#slider {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 980px;
+    max-width: 1200px;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked~#slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked~#slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked~#slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked~#slides .inner {
+    margin-left: -300%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+
+#slides .slide {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    color: #000000;
+}
+
+#slides .slide_1 {
+    background: url(../images/slider/background-slider-3.jpg);
+    background-size: cover;
+    font-family: "Montserrat Bold" ;
+    text-align: left;
+
+}
+
+#slides .slide_2 {
+    background: #A9B28D;
+}
+
+#slides .slide_3 {
+    background: #5E6549;
+}
+
+#slides .slide_4 {
+    background: #444;
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #5E6549;
+    margin: 0 10px;
+}
+
+#slide1:checked~#bullets label:nth-child(1),
+#slide2:checked~#bullets label:nth-child(2),
+#slide3:checked~#bullets label:nth-child(3),
+#slide4:checked~#bullets label:nth-child(4) {
+    background: #A9B28D;
+}
+
+
+/* Galería */
+
+#galeriaParticipa {
+    background-color: #F2CAB9;
+    padding-bottom: 40px;
+}
+
+#galeriaParticipa .galeria {
+    display: flex;
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#galeriaParticipa .galeria li {
+    margin: 0px;
+    list-style: none;
+
+}
+
+#galeriaParticipa .galeria img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: -4px;
+}
+
+#galeriaParticipa .galeria:first-child img {
+    margin-top: 0px;
+}
+
+
+#galeriaParticipa .lightbox {
+    display: none;
+}
+
+#galeriaParticipa .lightbox :target {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    opacity: 1;
+
+}
+
+#galeriaParticipa .lightbox h3 {
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+    font-family: "Montserrat SemiBold";
+}
+
+#galeriaParticipa .lightbox .imagen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#galeriaParticipa .lightbox .imagen a {
+    font-family: "Montserrat Regular";
+    color: #FFFFFF;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+
+#galeriaParticipa .lightbox .imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+#galeriaParticipa .lightbox .imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 1px solid #FFFFFF;
+}
+
+
+
+#galeriaParticipa .lightbox .cerrar .fa-xmark {
+    display: block;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+#galeriaParticipa .lightbox .cerrar .fa-xmark {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
 /* Página de recetas + Algunos apartados del home*/
 
 /* Cocina restrictiva */
@@ -426,6 +657,48 @@ body {
     margin: auto 8% auto 8%;
 }
 
+/* Formulario de contacto */
+#formularioContacto {
+    margin: auto;
+    font-family: "Montserrat Regular";
+}
+
+#contendorBloqueFormulario {
+    display: flex;
+    max-width: 1200px;
+    width: 980px;
+    margin: auto;
+}
+
+#contendorBloqueFormulario .formulario {
+    background-color: #F2CAB9;
+    width: 400px;
+    text-align: center;
+}
+
+.formulario input,
+.formulario textarea {
+    border: none;
+    width: 80%;
+    border-radius: 0px;
+}
+
+.formulario input::placeholder,
+.formulario textarea {
+    color: rgba(169, 178, 141, 0.30);
+}
+
+.formulario input[type=submit] {
+    background-color: #A9B28D;
+    width: 80%;
+    border: none;
+}
+
+#contendorBloqueFormulario .ilustracion {
+    background-color: #A9B28D;
+    width: 400px;
+}
+
 /* Páfgina categoria de recetas */
 
 #carruselCategorias .titular2 {
@@ -504,6 +777,7 @@ body {
     font-size: 12px;
 }
 
+
 /* Páginas legales */
 
 #paginasLegales {
@@ -541,12 +815,13 @@ body {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-#cuerpoReceta p{
+#cuerpoReceta p {
     font-size: 14px;
 }
+
 #cuerpoReceta {
     text-decoration: none;
     text-align: left;
@@ -622,7 +897,8 @@ body {
     padding-bottom: 1em;
     margin-bottom: 25px;
 }
-#cuerpoReceta .preparacion p{
+
+#cuerpoReceta .preparacion p {
     margin-left: 1em;
 }
 
@@ -867,7 +1143,7 @@ aside .catReceta a:hover {
 }
 
 
-/* Páfgina categoria de recetas */
+/* Página categoria de recetas */
 
 #carruselCategorias .titular2 {
     margin-top: 10px;
