@@ -130,6 +130,7 @@ body {
     margin-top: 15px;
     min-width: 180px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    z-index: 999;
 }
 
 #header .main-menu li:hover .submenu {
@@ -316,24 +317,56 @@ body {
     color: #000000;
 }
 
-#slides .slide_1 {
-    background: url(../images/slider/background-slider-3.jpg);
-    background-size: cover;
-    font-family: "Montserrat Bold" ;
-    text-align: left;
 
+#slides .slide_1 {
+    background: url(../images/slider/slider1.png);
+    background-size: cover;
+    transition: all 0.5s ease;
 }
+
+#slides .slide_1:hover {
+    background: url(../images/slider/slider1_hover.png);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
 
 #slides .slide_2 {
-    background: #A9B28D;
+    background: url(../images/slider/slider2.png);
+    background-size: cover;
+    transition: all 0.5s ease;
 }
 
+#slides .slide_2:hover {
+    background: url(../images/slider/slider2_hover.png);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
 #slides .slide_3 {
-    background: #5E6549;
+    background: url(../images/slider/slider3.png);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+#slides .slide_3:hover {
+    background: url(../images/slider/slider3_hover.png);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 #slides .slide_4 {
-    background: #444;
+    background: url(../images/slider/slider4.png);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+
+#slides .slide_4:hover {
+    background: url(../images/slider/slider4_hover.png);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 #controls {
