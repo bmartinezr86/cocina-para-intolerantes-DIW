@@ -130,6 +130,7 @@ body {
     margin-top: 15px;
     min-width: 180px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    z-index: 999;
 }
 
 #header .main-menu li:hover .submenu {
@@ -316,24 +317,56 @@ body {
     color: #000000;
 }
 
-#slides .slide_1 {
-    background: url(../images/slider/background-slider-3.jpg);
-    background-size: cover;
-    font-family: "Montserrat Bold" ;
-    text-align: left;
 
+#slides .slide_1 {
+    background: url(../images/slider/slider1.png);
+    background-size: cover;
+    transition: all 0.5s ease;
 }
+
+#slides .slide_1:hover {
+    background: url(../images/slider/slider1_hover.png);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
 
 #slides .slide_2 {
-    background: #A9B28D;
+    background: url(../images/slider/slider2.png);
+    background-size: cover;
+    transition: all 0.5s ease;
 }
 
+#slides .slide_2:hover {
+    background: url(../images/slider/slider2_hover.png);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
 #slides .slide_3 {
-    background: #5E6549;
+    background: url(../images/slider/slider3.png);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+#slides .slide_3:hover {
+    background: url(../images/slider/slider3_hover.png);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 #slides .slide_4 {
-    background: #444;
+    background: url(../images/slider/slider4.png);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+
+#slides .slide_4:hover {
+    background: url(../images/slider/slider4_hover.png);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 #controls {
@@ -377,7 +410,69 @@ body {
     background: #A9B28D;
 }
 
+/* Receta destacada*/
+#recetaDestacada .receta{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 60%;
+    padding-bottom: 60px;
+    padding-top: 70px;
 
+}
+
+#recetaDestacada .receta .contenido{
+    max-width: 800px;
+    width: 600px;
+    margin-right: 20px;
+    padding: 30px 0px;
+    font-family: "Montserrat Regular";
+
+}
+
+
+
+#recetaDestacada .receta h2{
+    color: #5E6549;
+    font-family: "Montserrat Bold";
+}
+
+#recetaDestacada .receta h3{
+    color: #A9B28D;
+
+}
+
+#recetaDestacada .receta h2,
+#recetaDestacada .receta h3 {
+        margin-bottom: 10px;
+}
+
+#recetaDestacada .receta p {
+    margin-top: 15;
+    margin-bottom: 40px;
+}
+
+#recetaDestacada .btn-green a{
+    background-color: #A9B28D;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 50px;
+}
+
+#recetaDestacada .btn-green a:hover {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    background-color: #5E6549;
+}
+
+
+
+#recetaDestacada .imagenDestacada img {
+    margin-top: 30px;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+
+}
 /* Galería */
 
 #galeriaParticipa {
@@ -811,7 +906,7 @@ body {
 
 }
 #mainReceta .titular2 {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 #mainReceta .contenido {
     max-width: 1200px;
