@@ -411,17 +411,16 @@ body {
 }
 
 /* Receta destacada*/
-#recetaDestacada .receta{
+#recetaDestacada .receta {
     display: flex;
     justify-content: center;
     margin: auto;
     max-width: 60%;
     padding-bottom: 60px;
-    padding-top: 70px;
 
 }
 
-#recetaDestacada .receta .contenido{
+#recetaDestacada .receta .contenido {
     max-width: 800px;
     width: 600px;
     margin-right: 20px;
@@ -431,20 +430,19 @@ body {
 }
 
 
-
-#recetaDestacada .receta h2{
+#recetaDestacada .receta h2 {
     color: #5E6549;
     font-family: "Montserrat Bold";
 }
 
-#recetaDestacada .receta h3{
+#recetaDestacada .receta h3 {
     color: #A9B28D;
 
 }
 
 #recetaDestacada .receta h2,
 #recetaDestacada .receta h3 {
-        margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #recetaDestacada .receta p {
@@ -452,7 +450,7 @@ body {
     margin-bottom: 40px;
 }
 
-#recetaDestacada .btn-green a{
+#recetaDestacada .btn-green a {
     background-color: #A9B28D;
     color: #fff;
     text-decoration: none;
@@ -473,6 +471,7 @@ body {
     object-fit: cover;
 
 }
+
 /* Galería */
 
 #galeriaParticipa {
@@ -706,7 +705,7 @@ body {
     max-width: 1200px;
     justify-content: center;
     margin: auto;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
 }
 
 #bloqueContacto .datosContacto {
@@ -760,22 +759,51 @@ body {
 
 #contendorBloqueFormulario {
     display: flex;
+    justify-content: center;
     max-width: 1200px;
-    width: 980px;
+    width: 870px;
     margin: auto;
+    margin-bottom: 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #contendorBloqueFormulario .formulario {
     background-color: #F2CAB9;
-    width: 400px;
+    width: 450px;
     text-align: center;
+    padding-top:30px;
+    padding-bottom:10px;
+}
+
+.formulario h3 {
+    color: white;
+}
+
+.formulario .separador {
+    background-color: white;
+    width: 60px;
+    height: 2px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario input {
+    height: 30px;
+}
+
+.formulario textarea {
+    height: 100px;
 }
 
 .formulario input,
 .formulario textarea {
     border: none;
+    padding:5px;
     width: 80%;
     border-radius: 0px;
+    margin: 10px;
+    transition: all 0.5s ease;
 }
 
 .formulario input::placeholder,
@@ -783,15 +811,49 @@ body {
     color: rgba(169, 178, 141, 0.30);
 }
 
+
+.formulario input:focus::placeholder,
+.formulario textarea:focus {
+    color: rgba(169, 178, 141, 1);
+}
+
 .formulario input[type=submit] {
     background-color: #A9B28D;
     width: 80%;
     border: none;
+    padding:5px;
+    color: #fff;
+    transition: all 0.5s ease;
 }
+
+.formulario input[type=submit]:hover {
+    background-color: #5E6549;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+}
+.ilustracion  {
+    background: url(../images/formulario/background_formulario.jpg);
+    background-size: 350px;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.ilustracion span {
+    position: relative;
+   
+}
+.ilustracion img {
+    width: 430px;
+    margin-bottom: -4px;
+}
+
+
+
 
 #contendorBloqueFormulario .ilustracion {
     background-color: #A9B28D;
-    width: 400px;
+    width: 450px;
 }
 
 /* Páfgina categoria de recetas */
@@ -905,9 +967,11 @@ body {
     font-family: "Montserrat Regular";
 
 }
+
 #mainReceta .titular2 {
     margin-left: 30px;
 }
+
 #mainReceta .contenido {
     max-width: 1200px;
     margin: auto;
@@ -930,10 +994,11 @@ body {
     font-size: 10px;
 }
 
-#cuerpoReceta .author{
+#cuerpoReceta .author {
     margin-left: 50px;
 
 }
+
 #cuerpoReceta .date {
     color: #F2CAB9;
 }
@@ -965,7 +1030,7 @@ body {
     font-family: "Montserrat Semibold";
     padding: .5em;
     text-align: left;
-    
+
 }
 
 #cuerpoReceta .ingredientesReceta {
@@ -1015,18 +1080,18 @@ body {
     margin-top: 30px;
 }
 
-#cuerpoReceta #bloquesReceta .socialIcons{
+#cuerpoReceta #bloquesReceta .socialIcons {
     margin-left: 50px;
     margin-bottom: 60px;
 }
 
-#cuerpoReceta #bloquesReceta .socialIcons a{
+#cuerpoReceta #bloquesReceta .socialIcons a {
     color: #000000;
     font-size: 16px;
     margin-right: 8px;
 }
 
-#cuerpoReceta #bloquesReceta .socialIcons a:hover{
+#cuerpoReceta #bloquesReceta .socialIcons a:hover {
     color: #5E6549;
     font-size: 16px;
     margin-right: 8px;
