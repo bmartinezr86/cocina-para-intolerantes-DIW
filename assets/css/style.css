@@ -810,7 +810,9 @@ body {
     font-family: "Montserrat Regular";
 
 }
-
+#mainReceta .titular2 {
+    margin-left: 50px;
+}
 #mainReceta .contenido {
     max-width: 1200px;
     margin: auto;
@@ -833,6 +835,10 @@ body {
     font-size: 10px;
 }
 
+#cuerpoReceta .author{
+    margin-left: 50px;
+
+}
 #cuerpoReceta .date {
     color: #F2CAB9;
 }
@@ -844,7 +850,7 @@ body {
 
 #cuerpoReceta .bloqueReceta {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #cuerpoReceta .bloqueReceta2 {
@@ -855,6 +861,7 @@ body {
 #cuerpoReceta .fotorec {
     width: 472px;
     height: 472px;
+    margin-left: 50px;
 }
 
 #cuerpoReceta .ingredientesReceta h3 {
@@ -863,9 +870,11 @@ body {
     font-family: "Montserrat Semibold";
     padding: .5em;
     text-align: left;
+    
 }
 
 #cuerpoReceta .ingredientesReceta {
+    margin-right: 5%;
     width: 270px;
     height: 470px;
     border: solid 2px #F2CAB9;
@@ -892,20 +901,40 @@ body {
 
 
 #cuerpoReceta .preparacion {
-    width: 750px;
+    width: 980px;
     border: solid 2px #A9B28D;
     padding-bottom: 1em;
     margin-bottom: 25px;
+    margin-left: 50px;
+
 }
 
 #cuerpoReceta .preparacion p {
-    margin-left: 1em;
+    margin-left: 50px;
 }
 
 #cuerpoReceta .textoReceta p {
     width: 720px;
     padding-bottom: 1em;
-    margin-left: 0;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#cuerpoReceta #bloquesReceta .socialIcons{
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+
+#cuerpoReceta #bloquesReceta .socialIcons a{
+    color: #000000;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+#cuerpoReceta #bloquesReceta .socialIcons a:hover{
+    color: #5E6549;
+    font-size: 16px;
+    margin-right: 8px;
 }
 
 aside {
