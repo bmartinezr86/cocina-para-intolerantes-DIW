@@ -582,6 +582,8 @@ body {
 
 .bloquesUltimasRecetas .bloque img {
     width: 200px;
+    height: 200px;
+    object-fit: cover;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1464,7 +1466,7 @@ aside .catReceta a:hover {
     display: flex;
     justify-content: center;
     color: #fff;
-    background-color: #A9B28D;
+    background-color: #F2CAB9;
     border: none;
     padding: 10px;
     width: 100px;
