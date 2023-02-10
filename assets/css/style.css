@@ -1311,7 +1311,7 @@ aside .catReceta a:hover {
     display: flex;
     justify-content: center;
     color: #fff;
-    background-color: #A9B28D;
+    background-color:#F2CAB9;
     border: none;
     padding: 10px;
     width: 100px;
@@ -1321,7 +1321,6 @@ aside .catReceta a:hover {
 #CategoriaCards2 .contenidoBtn:hover {
     background-color: #5E6549;
     cursor: pointer;
-
 }
 
 
@@ -1407,10 +1406,9 @@ aside .catReceta a:hover {
 
 .card:hover,
 .card:hover a {
-    background: #A9B28D;
+    background:#F2CAB9;
     cursor: pointer;
-    width: 320px;
-    font-size: 17px;
+    
 }
 
 .card h4:hover a {
