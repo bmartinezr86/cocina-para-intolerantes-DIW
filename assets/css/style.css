@@ -501,8 +501,8 @@ body {
 }
 
 #galeriaParticipa .galeria img {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     margin-top: -4px;
 }
@@ -512,72 +512,6 @@ body {
 }
 
 
-#galeriaParticipa .lightbox {
-    display: none;
-}
-
-#galeriaParticipa .lightbox :target {
-    display: block;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    opacity: 1;
-
-}
-
-#galeriaParticipa .lightbox h3 {
-    color: #FFFFFF;
-    font-size: 30px;
-    text-align: center;
-    margin: 15px 0;
-    font-family: "Montserrat SemiBold";
-}
-
-#galeriaParticipa .lightbox .imagen {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#galeriaParticipa .lightbox .imagen a {
-    font-family: "Montserrat Regular";
-    color: #FFFFFF;
-    font-size: 40px;
-    text-decoration: none;
-    margin: 0 10px;
-
-}
-
-#galeriaParticipa .lightbox .imagen a:nth-child(2) {
-    margin: 0;
-    height: 100%;
-    flex-shrink: 2;
-}
-
-#galeriaParticipa .lightbox .imagen img {
-    width: 500px;
-    height: 100%;
-    max-width: 100%;
-    border: 1px solid #FFFFFF;
-}
-
-
-
-#galeriaParticipa .lightbox .cerrar .fa-xmark {
-    display: block;
-    font-size: 30px;
-    color: #FFFFFF;
-    margin: auto;
-}
-
-#galeriaParticipa .lightbox .cerrar .fa-xmark {
-    font-size: 30px;
-    color: #FFFFFF;
-}
 
 /* Página de recetas + Algunos apartados del home*/
 
