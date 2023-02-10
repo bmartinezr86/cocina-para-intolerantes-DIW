@@ -1379,6 +1379,12 @@ aside .catReceta a:hover {
 }
 
 
+.card iframe {
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
 .card .resumen {
     padding: 10px;
     text-align: justify;
