@@ -31,6 +31,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFFFFF;
     margin: auto;
@@ -497,8 +501,8 @@ body {
 }
 
 #galeriaParticipa .galeria img {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     margin-top: -4px;
 }
@@ -508,72 +512,6 @@ body {
 }
 
 
-#galeriaParticipa .lightbox {
-    display: none;
-}
-
-#galeriaParticipa .lightbox :target {
-    display: block;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    opacity: 1;
-
-}
-
-#galeriaParticipa .lightbox h3 {
-    color: #FFFFFF;
-    font-size: 30px;
-    text-align: center;
-    margin: 15px 0;
-    font-family: "Montserrat SemiBold";
-}
-
-#galeriaParticipa .lightbox .imagen {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#galeriaParticipa .lightbox .imagen a {
-    font-family: "Montserrat Regular";
-    color: #FFFFFF;
-    font-size: 40px;
-    text-decoration: none;
-    margin: 0 10px;
-
-}
-
-#galeriaParticipa .lightbox .imagen a:nth-child(2) {
-    margin: 0;
-    height: 100%;
-    flex-shrink: 2;
-}
-
-#galeriaParticipa .lightbox .imagen img {
-    width: 500px;
-    height: 100%;
-    max-width: 100%;
-    border: 1px solid #FFFFFF;
-}
-
-
-
-#galeriaParticipa .lightbox .cerrar .fa-xmark {
-    display: block;
-    font-size: 30px;
-    color: #FFFFFF;
-    margin: auto;
-}
-
-#galeriaParticipa .lightbox .cerrar .fa-xmark {
-    font-size: 30px;
-    color: #FFFFFF;
-}
 
 /* Página de recetas + Algunos apartados del home*/
 
@@ -771,8 +709,8 @@ body {
     background-color: #F2CAB9;
     width: 450px;
     text-align: center;
-    padding-top:30px;
-    padding-bottom:10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .formulario h3 {
@@ -799,7 +737,7 @@ body {
 .formulario input,
 .formulario textarea {
     border: none;
-    padding:5px;
+    padding: 5px;
     width: 80%;
     border-radius: 0px;
     margin: 10px;
@@ -821,7 +759,7 @@ body {
     background-color: #A9B28D;
     width: 80%;
     border: none;
-    padding:5px;
+    padding: 5px;
     color: #fff;
     transition: all 0.5s ease;
 }
@@ -831,7 +769,8 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     cursor: pointer;
 }
-.ilustracion  {
+
+.ilustracion {
     background: url(../images/formulario/background_formulario.jpg);
     background-size: 350px;
     object-fit: cover;
@@ -841,8 +780,9 @@ body {
 
 .ilustracion span {
     position: relative;
-   
+
 }
+
 .ilustracion img {
     width: 430px;
     margin-bottom: -4px;
@@ -869,7 +809,7 @@ body {
     width: 980px;
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #bloquesFavoritas .bloqueFav {
@@ -1146,14 +1086,15 @@ aside .catReceta a:hover {
 /* Truco */
 
 #tituloTruco {
-    margin: 40px;
+    margin-top: 30px;
     margin-bottom: 10px;
-
+    font-family: "Montserrat Regular";
 }
 
-#tituloTruco .nombreTruco {
+#tituloTruco .nombreTruco,
+#trucoDerecha h3 {
     font-family: "Montserrat Regular";
-    margin: 40px auto;
+    margin:  auto;
     margin-bottom: 0;
     text-align: left;
     font-weight: bold;
@@ -1177,14 +1118,22 @@ aside .catReceta a:hover {
 
 }
 
+#contenidoTruco {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    text-align: justify;
+}
+
 #bloqueTruco {
     margin-top: 0;
     margin-left: 40px;
     justify-content: center;
     margin-bottom: 35px;
-    border: solid #A9B28D 1px;
     padding: 10px;
-
 }
 
 #bloqueTruco .videoTruco iframe {
@@ -1193,11 +1142,13 @@ aside .catReceta a:hover {
 }
 
 #bloqueTruco .textoTruco {
-    font-family: "Montserrat Regular";
     width: 570px;
-    text-align: justify;
-    padding: 1em;
+    padding: 10px;
+}
 
+ .textoTruco p {
+  margin:10px;
+  font-family: "Montserrat Regular";
 }
 
 .comparteTruco {
@@ -1224,21 +1175,22 @@ aside .catReceta a:hover {
     margin: 5px;
 }
 
-.comparteTruco a:hover {
-    color: #A9B28D;
+.comparteTruco .socialIcons a:hover{
+    color: #5E6549;
+    
 }
 
 #trucoIzquierda {
-    position: relative;
-    float: left;
-    background-color: #FFFFFF;
     padding-left: 5%;
-    width: auto;
+    width: 1200px;
+}
+
+#trucoIzquierda  #cardTruco {
+    width: 560px;
+    padding: 10px;
 }
 
 #trucoDerecha {
-    position: absolute;
-    right: 2%;
     background-color: #FFFFFF;
     font-family: "Montserrat Regular";
     padding-top: 20px;
@@ -1249,53 +1201,33 @@ aside .catReceta a:hover {
 
 #trucoDerecha .otrostrucos {
     padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 #trucoDerecha h3 {
-    text-align: center;
-    font-size: x-large;
-    font-weight: normal;
+   margin-bottom: 20px;
 }
+
+#trucoDerecha h4 {
+    margin-bottom: 20px;
+    font-family: "Montserrat SemiBold";
+    text-align: center;
+    font-size: 16px;
+ }
 
 #trucoDerecha a {
     text-decoration: none;
     color: #000000;
-    text-align: center;
+    margin: auto;
     display: inline;
 }
 
 #trucoDerecha a:hover {
     color: #A9B28D;
 }
-
-#main {
-    background-color: #FFFFFF;
-}
-
-/* Página Trucos*/
-#ultimosTrucos {
-    font-family: "Montserrat Regular";
-    margin: 5%;
-
-}
-
-#ultimosTrucos h3 {
-    font-size: x-large;
-}
-
-#contenedorSlide .videoSlide {
-    float: left;
-    margin: auto;
-    width: 1000px;
-    max-width: 1200px;
-    padding: 5px;
-}
-
-
-
-
-
-
 
 /* Página sobre nosotras*/
 
@@ -1334,7 +1266,218 @@ aside .catReceta a:hover {
 
 /* Página categoria de recetas */
 
-#carruselCategorias .titular2 {
-    margin-top: 10px;
+#ultimasCategorias{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.tituCat {
+    margin-top: 30px;
+}
+
+
+#CategoriaCards2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#CategoriaCards2 #columna2 {
+    display: none;
+    order: 0;
+}
+
+
+#CategoriaCards2 #columna2 {
+    display: none;
+    order: 1;
+}
+
+#CategoriaCards2 #chk:checked+#columna2 {
+    display: flex;
+}
+
+
+#CategoriaCards2 button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    order: 2;
 
 }
+
+#CategoriaCards2 .contenidoBtn {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #A9B28D;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+}
+
+#CategoriaCards2 .contenidoBtn:hover {
+    background-color: #5E6549;
+    cursor: pointer;
+
+}
+
+
+/* página trucos*/
+
+/*Carrusel trucos*/
+
+#ultimosTrucos {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.columna {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 300px;
+    border: 1px solid #ccc;
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+}
+
+
+.card h4 {
+    margin-bottom: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.card h4 a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Montserrat SemiBold";
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+}
+
+.card img {
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.card iframe {
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .resumen {
+    padding: 10px;
+    text-align: justify;
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    font-family: "Montserrat Regular";
+
+}
+
+.card .leerMas {
+    padding: 10px;
+
+}
+
+
+.card .leerMas a {
+    color: #A9B28D;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+}
+
+.card:hover,
+.card:hover a {
+    background: #A9B28D;
+    cursor: pointer;
+    width: 320px;
+    font-size: 17px;
+}
+
+.card h4:hover a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.card:hover .leerMas a {
+    color: #5E6549;
+    cursor: pointer;
+}
+
+.card .leerMas a:hover {
+    color: #fff;
+}
+
+
+#videoCards2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#videoCards2 #columna2 {
+    display: none;
+    order: 0;
+}
+
+
+#videoCards2 #columna2 {
+    display: none;
+    order: 1;
+}
+
+#videoCards2 #chk:checked+#columna2 {
+    display: flex;
+}
+
+
+ input[type=checkbox] {
+    display: none;
+}
+
+#videoCards2 button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    order: 2;
+
+}
+
+#videoCards2 .contenidoBtn {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #A9B28D;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+}
+
+#videoCards2 .contenidoBtn:hover {
+    background-color: #5E6549;
+    cursor: pointer;
+
+}
+
+
+
